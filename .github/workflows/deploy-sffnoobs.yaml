@@ -2,14 +2,16 @@ name: Deploy to sffnoobs environment on push to main
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - test
     paths:
       - 'force-app/**'
 
 jobs:
   Deploy-to-sffnoobs-environment:
       runs-on: ubuntu-latest
-      environment: sffnoobs
+      environment: ${{ github.ref == 'refs/heads/main' && 'sffnoobs' || 'test-environment' }}
       steps:
           - uses: actions/setup-node@v3
             with:
