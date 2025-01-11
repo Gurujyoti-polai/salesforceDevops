@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>FSC_Banker_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Financial Accounts Summary --></label>
+        <name>WM_Client_Profile_Fin_Acct_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Household Summary --></label>
+        <name>WM_Client_Profile_Relations_HH_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Group Members --></label>
+        <name>WM_Client_Relationship_Group_Members</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Groups --></label>
+        <name>WM_Client_Relationship_Groups</name>
+    </fieldSets>
+    <layouts>
+        <layout>Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Client Services --></label>
+            <section>Client Services</section>
+        </sections>
+        <sections>
+            <label>Financieel overzicht</label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label>Verwijzingsgegevens</label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Activate Card --></label>
+        <name>Activate_Card</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Beneficiary to Policy --></label>
+        <name>Add_Beneficiary_to_Policy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Driver to Auto Policy --></label>
+        <name>Add_Driver_to_Auto_Policy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Policy --></label>
+        <name>Cancel_Policy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Dispute Transactions --></label>
+        <name>Dispute_Transactions</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Initiate FNOL --></label>
+        <name>Initiate_FNOL</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Initiate Loan Against Policy --></label>
+        <name>Initiate_Loan_Against_Policy</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Issue New Card --></label>
+        <name>Issue_New_Card</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Order Checks --></label>
+        <name>Order_Checks</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Documents (Banking) --></label>
+        <name>Send_Documents_Banking</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Documents (Insurance) --></label>
+        <name>Send_Documents_Insurance</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Statement --></label>
+        <name>Send_Statement</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Address --></label>
+        <name>Update_Address</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Billing Date and Frequency --></label>
+        <name>Update_Billing_Date_and_Frequency</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Card Limits --></label>
+        <name>Update_Card_Limits</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Communication Preferences --></label>
+        <name>Update_Communication_Preferences</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Customer Details --></label>
+        <name>Update_Customer_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Lienholder --></label>
+        <name>Update_Lienholder</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Policy Beneficiary Details --></label>
+        <name>Update_Policy_Beneficiary_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Premium Payment Date and Frequency --></label>
+        <name>Update_Premium_Payment_Date_and_Frequency</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Premium Payment Method --></label>
+        <name>Update_Premium_Payment_Method</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Waive Fees --></label>
+        <name>Waive_Fees</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- This Record Type for Enabling Person Account --></description>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business or an organization --></description>
+        <label><!-- Business --></label>
+        <name>FinServ__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A grouping of related people and institutions --></description>
+        <label><!-- Household --></label>
+        <name>FinServ__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A person who is a prospect or a client --></description>
+        <label><!-- Individual --></label>
+        <name>FinServ__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An institution that is a prospect or a client --></description>
+        <label><!-- Institution --></label>
+        <name>FinServ__IndustriesInstitution</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Internal referrers must be internal Salesforce users. --></errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
+        <name>FinServ__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
+        <name>FinServ__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. --></errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddMember --></label>
+        <name>FinServ__AddMember</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddRelation --></label>
+        <name>FinServ__AddRelation</name>
+    </webLinks>
+</CustomObjectTranslation>

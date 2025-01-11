@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cobrança e taxa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cobranças e taxas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome de encargos e taxas</nameFieldLabel>
+</CustomObjectTranslation>

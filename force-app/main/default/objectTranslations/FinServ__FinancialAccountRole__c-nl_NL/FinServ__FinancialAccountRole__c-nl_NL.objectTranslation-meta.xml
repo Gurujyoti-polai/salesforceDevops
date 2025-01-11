@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rol voor financiële rekening</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rollen voor financiële rekeningen</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Financial Account Role --></label>
+        <name>WM_Client_FinancialAccountRole</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Rolnummer</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>החשבון הפיננסי</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>חשבון פיננסי</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>החשבונות הפיננסיים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>חשבונות פיננסיים</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Auto Loan Account --></label>
+        <name>FSC_Client_AutoLoan</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Checking Account --></label>
+        <name>FSC_Client_CheckingAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Card Account --></label>
+        <name>FSC_Client_CreditCard</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HELOC Account --></label>
+        <name>FSC_Client_HELOC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loan Account --></label>
+        <name>FSC_Client_LoanAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mortgage Account --></label>
+        <name>FSC_Client_MortgageAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Savings Account --></label>
+        <name>FSC_Client_SavingsAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Service --></label>
+        <name>FSC_Client_TreasuryService</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Auto Loan Account --></label>
+        <name>FSC_Group_AutoLoan</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Checking Account --></label>
+        <name>FSC_Group_CheckingAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Card Account --></label>
+        <name>FSC_Group_CreditCard</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HELOC Account --></label>
+        <name>FSC_Group_HELOC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loan Account --></label>
+        <name>FSC_Group_LoanAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mortgage Account --></label>
+        <name>FSC_Group_MortgageAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Savings Account --></label>
+        <name>FSC_Group_SavingsAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Service --></label>
+        <name>FSC_Group_TreasuryService</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Banking Account --></label>
+        <name>WM_Client_BankingAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Insurance Policy --></label>
+        <name>WM_Client_InsuranceAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Investment Account --></label>
+        <name>WM_Client_InvestmentAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Banking Account --></label>
+        <name>WM_Household_BankingAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Insurance Policy --></label>
+        <name>WM_Household_InsuranceAccount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Investment Account --></label>
+        <name>WM_Household_InvestmentAccount</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם חשבון פיננסי</nameFieldLabel>
+</CustomObjectTranslation>

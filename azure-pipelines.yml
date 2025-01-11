@@ -1,0 +1,37 @@
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - Test
+      - main
+  paths:
+    exclude:
+      - README.md
+      - azure-pipelines.yml
+
+stages:
+  - stage: TestSalesforceOrg
+    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/Test'), eq(variables['Build.SourceBranch'], 'refs/heads/main')))
+    jobs:
+      - job: DeployTestOrg
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '14.x'
+              checkLatest: true
+
+          - bash: |
+              npm install sfdx-cli --global
+            displayName: Install Salesforce CLI
+
+          - bash: |
+              sfdx config:set restDeploy=false --global
+            displayName: Use SOAP API for Deployment
+
+          - bash: |
+              sfdx force:auth:jwt:grant --clientid 3MVG9q4K8Dm94dAxBF9zZWh3i.STazhPYqxtzPpgHYVQrgxz8dMh_46kr_lAELbR.HNQTM8bTedCpU4rz8DMk --jwtkeyfile ./bin/server.key --username rishipolaie09@gmail.com --instanceurl https://login.salesforce.com
+            displayName: Authorize Salesforce DeployTestOrg Org
+
+          - bash: |
+              sfdx force:source:deploy -p force-app -w 10 -u rishipolaie09@gmail.com
+            displayName: Deploy source code to DeployTestOrg Org

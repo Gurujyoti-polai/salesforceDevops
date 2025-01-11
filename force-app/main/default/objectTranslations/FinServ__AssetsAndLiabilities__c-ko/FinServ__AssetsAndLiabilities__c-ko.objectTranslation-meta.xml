@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>자산 및 부채</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Assets &amp; Liabilities --></label>
+        <name>WM_Client_Assets_Liabilities</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Assets &amp; Liabilities --></label>
+        <name>WM_Household_Assets_Liabilities</name>
+    </fieldSets>
+    <nameFieldLabel>자산 또는 부채 이름</nameFieldLabel>
+</CustomObjectTranslation>

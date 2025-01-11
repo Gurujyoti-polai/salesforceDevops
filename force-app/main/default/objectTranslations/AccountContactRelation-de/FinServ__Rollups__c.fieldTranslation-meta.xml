@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Roll-Ups --></label>
+    <name>FinServ__Rollups__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation>Alle</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assets and Liabilities</masterLabel>
+        <translation>Aktiva und Passiva</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Events</masterLabel>
+        <translation>Ereignisse</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Accounts</masterLabel>
+        <translation>Finanz-Accounts</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Goals</masterLabel>
+        <translation>Finanzziele</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunities</masterLabel>
+        <translation>Opportunities</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referrals</masterLabel>
+        <translation>Empfehlungen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tasks</masterLabel>
+        <translation>Aufgaben</translation>
+    </picklistValues>
+</CustomFieldTranslation>
